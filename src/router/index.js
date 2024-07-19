@@ -4,6 +4,8 @@ import CategoriaView from "../views/CategoriaView.vue";
 import MarcaView from "../views/MarcaView.vue";
 import CorView from "../views/CorView.vue";
 import AcessorioView from "../views/AcessorioView.vue";
+import LogoutView from "../views/LogoutView.vue";
+import LoginView from "../views/LoginView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +35,16 @@ const router = createRouter({
       name: "marcas",
       component: MarcaView,
     },
+    {
+      path: "/logout",
+      name: "logout",
+      component: LogoutView,
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: LoginView,
+    }
   ],
 });
 

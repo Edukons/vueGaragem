@@ -1,6 +1,6 @@
 <script setup>
 import { ref, reactive, onMounted } from "vue";
-import MarcasApi from "@/api/categorias";
+import MarcasApi from "@/api/marcas";
 const marcasApi = new MarcasApi();
 
 const defaultMarca = { id: null, marca: "" };
