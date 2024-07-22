@@ -17,9 +17,9 @@ function limpar() {
 
 async function salvar() {
   if (marca.id) {
-    await marcasApi.atualizarCategoria(marca);
+    await marcasApi.atualizarMarca(marca);
   } else {
-    await marcasApi.adicionarCategoria(marca);
+    await marcasApi.adicionarMarca(marca);
   }
   marcas.value = await marcasApi.buscarTodasAsMarcas();
   limpar();
