@@ -21,7 +21,7 @@ async function salvar() {
   } else {
     await coresApi.adicionarCor(cor);
   }
-  acessorios.value = await coresApi.buscarTodasAsCores();
+  cores.value = await coresApi.buscarTodasAsCores();
   limpar();
 }
 
@@ -30,7 +30,7 @@ function editar(cor_para_editar) {
 }
 
 async function excluir(id) {
-  await ace.excluirCor(id);
+  await coresApi.excluirCor(id);
   cor.value = await coresApi.buscarTodasAsCores();
   limpar();
 }
